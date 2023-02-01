@@ -1,4 +1,4 @@
-package com.example.ilk_projem;
+package com.example.demo;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
