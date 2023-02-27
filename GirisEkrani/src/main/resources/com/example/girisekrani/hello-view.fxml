@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="anchorpane" fx:id="controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@stil.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.girisekrani.HelloController">
+   <children>
+      <Pane layoutX="174.0" layoutY="146.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fcdfee; -fx-background-radius: 50;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Label layoutX="194.0" layoutY="31.0" text="Giris Yap" textAlignment="CENTER" textFill="#d70ed3">
+               <font>
+                  <Font name="Microsoft Himalaya" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="161.0" layoutY="77.0" prefHeight="27.0" prefWidth="160.0" style="-fx-background-color: #ccc; -fx-text-fill: black;" text="Lutfen Giris Yapin" textFill="#cccccc" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="sifre" layoutX="160.0" layoutY="150.0" prefHeight="25.0" prefWidth="218.0" promptText="parola" />
+            <TextField fx:id="email" layoutX="160.0" layoutY="115.0" prefHeight="25.0" prefWidth="218.0" promptText="email or username" />
+            <Button fx:id="buton" layoutX="163.0" layoutY="188.0" mnemonicParsing="false" onAction="#girisyap" style="-fx-background-color: #d70ed3; -fx-background-radius: 10;" text="Giris Yap" />
+            <Label fx:id="sonuc" layoutX="211.0" layoutY="247.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="helpButton" layoutX="242.0" layoutY="277.0" mnemonicParsing="false" onAction="#yardimiste" style="-fx-background-color: #a600ff;" text="Help" />
+            <Button fx:id="btnMerhaba" layoutX="19.0" layoutY="383.0" mnemonicParsing="false" onAction="#doSomething" text="Merhaba" />
+            <Button fx:id="btnHoscakal" layoutX="104.0" layoutY="383.0" mnemonicParsing="false" onAction="#doSomething" text="Hoscakal" />
+            <TextField fx:id="txtName" layoutX="47.0" layoutY="343.0" onKeyReleased="#keyReleased" promptText="name" />
+            <Button fx:id="btnHarfSayisi" layoutX="29.0" layoutY="430.0" mnemonicParsing="false" onAction="#harfSayisiniVer" text="Harf Sayisini Ver" />
+            <Button fx:id="btnIsmiTemizle" layoutX="19.0" layoutY="472.0" mnemonicParsing="false" onAction="#ismiTemizle" text="ismi temizle" />
+            <CheckBox fx:id="checkbox" layoutX="211.0" layoutY="390.0" mnemonicParsing="false" onAction="#chechboxsecimi" prefHeight="25.0" prefWidth="210.0" text="seciliyse ismi temizle" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,9 @@
+#anchorpane{
+    -fx-background-image: url("space.jpg");
+    -fx-background-size: cover;
+}
+
+#btnece {
+    -fx-background-color: #ff00a2;
+    -fx-text-fill: white;
+}
