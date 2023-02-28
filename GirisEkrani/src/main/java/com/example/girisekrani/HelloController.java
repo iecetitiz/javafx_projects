@@ -82,12 +82,14 @@ public class HelloController {
 
     @FXML
     void chechboxsecimi(ActionEvent event) {
-        System.out.println("seciliyseee");
+        System.out.println("checkbox: " + checkbox.isSelected());
     }
 
     @FXML
     void ismiTemizle(ActionEvent event) {
-
+        if(checkbox.isSelected()) {
+            txtName.clear();
+        }
     }
 
     @FXML
